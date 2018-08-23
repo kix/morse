@@ -105,9 +105,9 @@ You can provide handlers for [Callbacks](https://core.telegram.org/bots/api#answ
 which are sent from [inline keyboards](https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating)
 
 ```clojure
-(callback-fn (fn [data] (println "Received callback: " inline)))
+(callback-fn (fn [cb] (println "Received callback: " cb)))
 ; or in a macro form
-(callback data (println "Received callback: " inline))
+(callback cb (println "Received callback: " cb))
 ```
 
 
